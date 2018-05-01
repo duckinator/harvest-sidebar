@@ -5,9 +5,14 @@
 
   "description": "Adds a sidebar for tracking time in Harvest.",
 
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+
   "content_scripts": [
     {
-      "matches": ["*://github.com/*", "*://gitlab.com/*"],
+      "matches": ["https://github.com/*", "https://gitlab.com/*"],
       "js": ["sidebar.js"]
     }
   ]
