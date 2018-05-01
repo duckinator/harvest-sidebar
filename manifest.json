@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Harvest Sidebar",
+  "version": "1.0",
+
+  "description": "Adds a sidebar for tracking time in Harvest.",
+
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*", "*://gitlab.com/*"],
+      "js": ["sidebar.js"]
+    }
+  ]
+}
